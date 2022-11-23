@@ -17,8 +17,10 @@ public class City {
 
     private String code;
 
-    @Column(name = "parkingFacilities")
     private String parkingFacilities;
+
+    public City(){
+    }
 
     public String getId() {
         return id;

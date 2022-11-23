@@ -13,6 +13,8 @@ public class ParkingFacilities {
 
     private String typeId;
 
+    private String city;
+
     public String getId() {
         return id;
     }
@@ -29,4 +31,14 @@ public class ParkingFacilities {
         this.typeId = typeId;
     }
 
+    public ParkingFacilities() {
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 }

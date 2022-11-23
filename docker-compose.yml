@@ -1,0 +1,21 @@
+version: '3'
+services:
+  database:
+    image: mysql:latest
+    container_name: database
+    ports:
+      - "3306:3306"
+    networks:
+      - goosfraba
+
+  backend:
+    image: city.management:latest
+    container_name: city.management
+    ports:
+      - "8080:8080"
+    networks:
+      - goosfraba
+
+networks:
+  goosfraba:
+    driver: bridge
